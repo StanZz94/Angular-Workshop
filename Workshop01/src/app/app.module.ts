@@ -8,6 +8,7 @@ import { SharedModule } from './shared/shared.module';
 import { MainComponent } from './main/main.component';
 import { PostsListComponent } from './posts-list/posts-list.component';
 import { ThemeListComponent } from './theme-list/theme-list.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ThemeListComponent } from './theme-list/theme-list.component';
     AppRoutingModule,
     CoreModule,
     SharedModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

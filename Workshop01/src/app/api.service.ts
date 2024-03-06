@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,9 +6,11 @@ import { Injectable } from '@angular/core';
 })
 export class ApiService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  getThemes() {}
+  getThemes() {
+    const api = "http://127.0.0.1/300";
+  }
 
-  getPosts() {}
+  getPosts(limit?: number) {}
 }
