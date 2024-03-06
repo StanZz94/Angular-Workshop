@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment.development';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,9 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getThemes() {
-    const api = "http://127.0.0.1/300";
+    const { apiUrl } = environment;
+
+    return this.http.get(`${apiUrl}/themes`)
   }
 
   getPosts(limit?: number) {}
