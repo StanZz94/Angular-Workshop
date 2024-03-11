@@ -8,7 +8,9 @@ import { SharedModule } from './shared/shared.module';
 import { MainComponent } from './main/main.component';
 import { PostsListComponent } from './posts-list/posts-list.component';
 import { ThemeListComponent } from './theme-list/theme-list.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
+import { AddThemeComponent } from './theme/add-theme/add-theme.component'
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { HttpClientModule } from '@angular/common/http'
     MainComponent,
     PostsListComponent,
     ThemeListComponent,
+    HomeComponent,
+    AddThemeComponent,
   ],
   imports: [
     BrowserModule,
