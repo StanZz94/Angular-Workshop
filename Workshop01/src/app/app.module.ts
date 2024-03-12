@@ -20,12 +20,12 @@ import { ErrorComponent } from './error/error.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     CoreModule,
     SharedModule,
     HttpClientModule,
     UserModule,
     ThemesModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
