@@ -5,21 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
-import { MainComponent } from './main/main.component';
-import { PostsListComponent } from './posts-list/posts-list.component';
-import { ThemeListComponent } from './theme-list/theme-list.component';
+import { MainComponent } from './theme/main/main.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
-import { AddThemeComponent } from './theme/add-theme/add-theme.component'
+import { UserModule } from './user/user.module';
+import { ThemesModule } from './theme/theme.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent,
-    PostsListComponent,
-    ThemeListComponent,
     HomeComponent,
-    AddThemeComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,6 +22,8 @@ import { AddThemeComponent } from './theme/add-theme/add-theme.component'
     CoreModule,
     SharedModule,
     HttpClientModule,
+    UserModule,
+    ThemesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
