@@ -18,6 +18,10 @@ export class ThemesListComponent implements OnInit{
     return this.userService.isLogged;
   }
 
+  get userId(): string {
+    return this.userService.user?.id || ''
+  }
+
   ngOnInit(): void {
     this.api.getThemes().subscribe(themes => {
       this.themes = themes
