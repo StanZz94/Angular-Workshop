@@ -27,4 +27,11 @@ export class ThemesListComponent implements OnInit{
       this.themes = themes
     });
   }
+
+  isSubscribed(theme: Theme) {
+    
+    const isSubscribedUser = theme.subscribers.find((s) => s === this.userId);
+
+    return isSubscribedUser;
+  }
 }
